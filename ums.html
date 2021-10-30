@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>LPU | Landing Page</title>
+ <link rel=stylesheet href="lpu.css">
+</head>
+<body>
+<ul>
+  <li><a class="active" href="#home">PARENT'S LOGIN</a></li>
+  <li><a href="#news">UMS</a></li>
+  <li><a href="#contact">JOBS</a></li>
+  <li><a href="#about">HAPPENINGS</a></li>
+  <li><a href="#news">CAREER GUIDANCE</a></li>
+  <li><a href="#contact">CONFERENCES</a></li>
+  <li><a href="#about">STUDY ABROAD</a></li>
+  <li><a href="#news">LPUNEST</a></li>
+  <li><a href="#contact">INTERNATIONAL ADMISSIONS</a></li>
+  <li><a href="#about">CONTACT US</a></li>
+</ul>
+<img src="https://www.lpu.in/images/logo/logo.svg" height=200 width=200 align='left'>
+<center><h1><font color="red">Lovely Professional University</h1>
+<h1><small>India's Best Private University in Punjab</small></font></h1></center>
+<script>
+var i=0; //start point
+var images=[];
+var time=5000;//equal to 5 sec 
+
+//image list
+images[0]="https://thebridge.in/h-upload/2021/07/29/12338-lovely-professional-university.webp";
+images[1]="https://spiderimg.amarujala.com/assets/images/2021/07/08/750x506/lovely-professional-university_1625742881.png";
+images[2]="https://spiderimg.amarujala.com/assets/images/2020/01/21/750x506/lpu_1579588723.png";
+
+function changeImg(){
+    document.slide.src=images[i];
+    if(i<images.length-1){
+        i++;
+    }
+    else{
+        i=0;
+    }
+    setTimeout("changeImg()",time);
+}
+
+window.onload=changeImg;
+</script>
+<img name="slide" width="100%" height="600"><br><br>
+<center><img src="https://qph.fs.quoracdn.net/main-qimg-8016cd2a3c3d92449af82ca4bbf1b6f5" height=400></center>
+<br>
+<center><h2>LPU-A Campus to Fall in Love With</h2></center>
+<marquee>The following website has been created using image sliders, navbar navigation, hover features and css formatting</marquee>
+</body>
+</html>
